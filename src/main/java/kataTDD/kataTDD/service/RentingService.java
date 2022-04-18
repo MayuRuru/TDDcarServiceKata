@@ -1,13 +1,12 @@
-package service;
+package kataTDD.kataTDD.service;
 
-import exceptions.RentingServiceException;
-import model.Car;
-import model.RentItem;
-import model.User;
-import org.springframework.beans.factory.annotation.Autowired;
-import repositories.CarRepo;
-import repositories.RentItemRepo;
-import repositories.UserRepo;
+import kataTDD.kataTDD.exceptions.RentingServiceException;
+import kataTDD.kataTDD.model.Car;
+import kataTDD.kataTDD.model.RentItem;
+import kataTDD.kataTDD.model.User;
+import kataTDD.kataTDD.repositories.CarRepo;
+import kataTDD.kataTDD.repositories.RentItemRepo;
+import kataTDD.kataTDD.repositories.UserRepo;
 
 public class RentingService {
 

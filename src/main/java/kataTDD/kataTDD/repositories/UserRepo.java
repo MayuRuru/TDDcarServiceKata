@@ -1,6 +1,6 @@
-package repositories;
+package kataTDD.kataTDD.repositories;
 
-import model.User;
+import kataTDD.kataTDD.model.User;
 
 import java.util.Optional;
 

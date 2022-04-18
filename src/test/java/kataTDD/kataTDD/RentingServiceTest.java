@@ -1,19 +1,18 @@
 package kataTDD.kataTDD;
 
-import exceptions.RentingServiceException;
-import model.Car;
-import model.RentItem;
-import model.User;
-import org.hibernate.mapping.Any;
+import kataTDD.kataTDD.exceptions.RentingServiceException;
+import kataTDD.kataTDD.model.Car;
+import kataTDD.kataTDD.model.RentItem;
+import kataTDD.kataTDD.model.User;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.springframework.boot.test.context.SpringBootTest;
-import repositories.CarRepo;
-import repositories.RentItemRepo;
-import repositories.UserRepo;
-import service.RentingService;
+import kataTDD.kataTDD.repositories.CarRepo;
+import kataTDD.kataTDD.repositories.RentItemRepo;
+import kataTDD.kataTDD.repositories.UserRepo;
+import kataTDD.kataTDD.service.RentingService;
 
 import java.util.Optional;
 
@@ -88,7 +87,7 @@ class RentingServiceTest {
         RentItem rentItem = new RentItem(user, car);
         var rentingService = new RentingService(userRepo, carRepo, rentItemRepo);
 
-        Mockito.when(carRepo.findById(car.getId())).thenReturn(Optional.of(car));
+        Mockito.when(carRepo.findById(car.getId())).thenReturn(Optional.empty());
         Mockito.when(userRepo.findById(user.getId())).thenReturn(Optional.of(user));
         Mockito.when(rentItemRepo.save(rentItem)).thenReturn(rentItem);
         Mockito.when(rentItemRepo.findRentItemByCarId(car)).thenReturn(Optional.empty());

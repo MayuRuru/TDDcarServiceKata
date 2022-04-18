@@ -1,7 +1,7 @@
-package repositories;
+package kataTDD.kataTDD.repositories;
 
-import model.Car;
-import model.RentItem;
+import kataTDD.kataTDD.model.RentItem;
+import kataTDD.kataTDD.model.Car;
 
 import java.util.Optional;
 

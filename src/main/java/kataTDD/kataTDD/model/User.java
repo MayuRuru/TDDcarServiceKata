@@ -1,4 +1,4 @@
-package model;
+package kataTDD.kataTDD.model;
 
 public class User {
     private Long id;

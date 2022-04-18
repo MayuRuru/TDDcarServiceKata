@@ -1,4 +1,4 @@
-package exceptions;
+package kataTDD.kataTDD.exceptions;
 
 public class RentingServiceException extends RuntimeException{
     private String code;
